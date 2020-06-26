@@ -1,0 +1,10 @@
+
+<div class="player" [class.actionRequired]="player.actionRequired">
+  <div class="circle"
+       [style.background-color]="player.color"
+       [style.border-color]="player.color"
+  ></div>
+  <div class="name" [style.color]="player.color">{{player.name}}</div>
+  <div class="score" [style.color]="player.color">{{player.score}}</div>
+  <div *ngIf="player.storyTeller" class="story-teller" [style.color]="player.color">Story Teller</div>
+</div>

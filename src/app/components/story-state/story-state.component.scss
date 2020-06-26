@@ -1,0 +1,12 @@
+.story-state {
+  button,
+  button:active {
+    background-color: mediumslateblue;
+    border-color: mediumslateblue;
+    margin: 10px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

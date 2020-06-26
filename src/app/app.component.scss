@@ -1,0 +1,28 @@
+.game {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 20px;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #383637;
+  //color: #464775;
+  color: #8c8ca6;
+  font-weight: 800;
+
+  button,
+  button:active {
+    background-color: mediumslateblue;
+    border-color: mediumslateblue;
+    margin: 10px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .players {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #bfbde4;
+    border-radius: 10px;
+    margin: 5px;
+  }
+}

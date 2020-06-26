@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 120px;
+  border: 2px solid #bfbde4;
+  border-radius: 5px;
+  margin: 10px;
+
+  &.selected {
+    box-shadow: 0 0 8px 4px #fe8901;
+  }
+}

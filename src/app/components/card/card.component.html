@@ -1,0 +1,7 @@
+<div
+  class="card"
+  [ngClass]="{'selected': card.selected}"
+  (click)="select(card)"
+>
+  <div class="content">{{card.src}}</div>
+</div>

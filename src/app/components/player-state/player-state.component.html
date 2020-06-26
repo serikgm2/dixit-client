@@ -1,0 +1,26 @@
+<!-- just for debugging :) -->
+<div>{{player | json}}</div>
+
+<div class="player-state">
+
+  <app-cards-list
+    [cards]="player.myCards"
+    (selectCard)="selectCard($event)"
+  ></app-cards-list>
+
+  <button
+    *ngIf="!gameState?.storyGiven && isCardSelected && player.storyTeller"
+    class="btn btn-primary"
+    type="button"
+    title="{{tellStoryBtnTitle}}"
+    (click)="tellStory()"
+  >Tell My Story</button>
+
+  <button
+    *ngIf="playStoryEnabled"
+    class="btn btn-primary"
+    type="button"
+    title="{{playStoryBtnTitle}}"
+    (click)="answerStory()"
+  >Play Given Story</button>
+</div>

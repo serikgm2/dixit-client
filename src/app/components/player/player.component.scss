@@ -1,0 +1,32 @@
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80px;
+  height: 120px;
+  border: 2px solid #bfbde4;
+  border-radius: 5px;
+  margin: 10px;
+
+  &.actionRequired {
+    box-shadow: 0 0 4px 2px yellow;
+  }
+
+  .circle {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #bfbde4;
+    background-color: #bfbde4;
+    border-radius: 20px;
+  }
+
+  .name {
+    color: #bfbde4;
+  }
+
+  .story-teller {
+    font-size: 10px;
+    color: aqua;
+  }
+}

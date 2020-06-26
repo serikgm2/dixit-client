@@ -1,0 +1,15 @@
+
+<div class="story-state">
+  <app-cards-list
+    [cards]="game.storyState.playedCards"
+    (selectCard)="selectCard($event)"
+  ></app-cards-list>
+
+  <button
+    *ngIf="!player?.guessed && isCardSelected"
+    class="btn btn-primary"
+    type="button"
+    title="{{voteForStoryBtnTitle}}"
+    (click)="guessStory()"
+  >This one :)</button>
+</div>

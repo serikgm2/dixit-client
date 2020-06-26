@@ -1,0 +1,3 @@
+<div *ngIf="cards?.length" class="cards-list">
+  <app-card *ngFor="let card of cards" [card]="card" (selectCard)="select($event)"></app-card>
+</div>
